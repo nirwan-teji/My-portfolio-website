@@ -707,3 +707,293 @@ header {
     height: 90vmax;
   }
 }
+
+/* =====================================================
+   Updated content (Oct 2026): hero subtitle, resume button,
+   new skill bars, Experience, Projects, Achievements
+   ===================================================== */
+
+/* ////........Hero........//// */
+
+.home-content .name p.hero-sub {
+  font-size: 1.1rem;
+  margin-top: 0.4rem;
+  color: #07374a;
+  font-weight: 500;
+}
+
+/* ////........Resume button........//// */
+
+.resume-cta {
+  margin-top: 1.5rem;
+}
+
+.resume-cta a {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  background: #25b79f;
+  color: #07374a;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  border-bottom: 2px solid #f0f0e6;
+  transition: 0.3s ease-in-out;
+}
+
+.resume-cta a:hover {
+  background: #f0f0e6;
+}
+
+/* ////........Skill bars (new names)........//// */
+
+.progress-line .python {
+  width: 90%;
+}
+.progress-line .genai {
+  width: 85%;
+}
+.progress-line .ml {
+  width: 80%;
+}
+.progress-line .cloud {
+  width: 70%;
+}
+.progress-line .dsa {
+  width: 70%;
+}
+
+.progress-line .python::after {
+  content: "90%";
+}
+.progress-line .genai::after {
+  content: "85%";
+}
+.progress-line .ml::after {
+  content: "80%";
+}
+.progress-line .cloud::after {
+  content: "70%";
+}
+.progress-line .dsa::after {
+  content: "70%";
+}
+
+.progress-line .python::before,
+.progress-line .genai::before,
+.progress-line .ml::before,
+.progress-line .cloud::before,
+.progress-line .dsa::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #f0f0f0;
+}
+
+.progress-line .python::after,
+.progress-line .genai::after,
+.progress-line .ml::after,
+.progress-line .cloud::after,
+.progress-line .dsa::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+/* ////........Shared section heading........//// */
+
+.section-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 0 0 3rem 0;
+}
+
+/* ////........Experience (teal)........//// */
+
+.experience {
+  background: #25b79f;
+  padding: 6rem 0;
+}
+
+.experience .section-heading {
+  color: #07374a;
+}
+
+.exp-card {
+  background: #f0f0e6;
+  color: #07374a;
+  border-bottom: 4px solid #07374a;
+  border-radius: 6px;
+  padding: 1.6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+
+.exp-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exp-card h3 {
+  font-size: 1.4rem;
+}
+
+.exp-date {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.exp-org {
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.exp-card ul {
+  padding-left: 1.2rem;
+}
+
+.exp-card li {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* ////........Projects (navy)........//// */
+
+.projects {
+  background: #07374a;
+  padding: 6rem 0;
+}
+
+.projects .section-heading {
+  color: #25b79f;
+}
+
+.projects .proj-1 {
+  margin-bottom: 3rem;
+}
+
+.projects .proj-1 .proj1-details {
+  width: 46rem;
+  max-width: 100%;
+  border-left: 4px solid #25b79f;
+  padding-left: 1.5rem;
+}
+
+.projects .proj-1 .proj1-details h2 {
+  color: #25b79f;
+  font-size: 1.7rem;
+}
+
+.projects .proj-1 .proj1-details p {
+  color: #f0f0e6;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.projects .proj-1 .proj1-details p.proj-stack {
+  color: #25b79f;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+.projects .proj-1 .proj1-details p.proj-desc {
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
+
+.projects .proj-1 .proj1-details button {
+  border-bottom-color: #25b79f;
+}
+
+.projects .proj-1 .proj1-details button:hover {
+  background: #25b79f;
+}
+
+.projects .proj-1 .proj1-details button:hover a,
+.projects .proj-1 .proj1-details button:hover .fas {
+  color: #07374a;
+}
+
+/* ////........Achievements (teal)........//// */
+
+.achievements {
+  background: #25b79f;
+  padding: 6rem 0;
+}
+
+.achievements .section-heading {
+  color: #07374a;
+}
+
+.ach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.ach-card {
+  background: #f0f0e6;
+  color: #07374a;
+  border-bottom: 4px solid #07374a;
+  border-radius: 6px;
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.ach-year {
+  display: block;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.ach-card h3 {
+  font-size: 1.15rem;
+  margin: 0.4rem 0;
+}
+
+.ach-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ////........Contact link tweak........//// */
+
+.contact-content .mail a {
+  padding: 0;
+}
+
+/* ////........Responsive for new sections........//// */
+
+@media (max-width: 768px) {
+  .experience,
+  .projects,
+  .achievements {
+    padding: 4rem 0;
+  }
+
+  .exp-card {
+    padding: 1.2rem 1.2rem;
+  }
+
+  .projects .proj-1 .proj1-details {
+    width: 100%;
+  }
+}
